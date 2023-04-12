@@ -1,0 +1,67 @@
+name: my_gallery_app
+description: A new Flutter project.
+
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.5
+  # Svg images , Picked and cache images packages
+  flutter_svg: ^1.1.6
+
+  # bloc for state management
+  flutter_bloc: ^8.1.1
+
+  # Value equality
+  equatable: ^2.0.5
+
+  # Service locator
+  get_it: ^7.2.0
+
+  # functional programming things
+  dartz: ^0.10.1
+
+  #  Network and remote API
+  dio: ^4.0.6
+
+ # Toast and output print
+  fluttertoast: ^8.2.1
+  quick_log:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+     - assets/images/
+     - assets/svgs/
+
+  fonts:
+     - family: Segoe UI
+       fonts:
+         - asset: assets/fonts/seoge_font/Segoe UI.ttf
+           weight: 500
+         - asset: assets/fonts/seoge_font/Segoe UI Bold.ttf
+           weight: 700
+
+     - family: BalooThambi2
+       fonts:
+         - asset: assets/fonts/baloo_thambi_font/BalooThambi2-SemiBold.ttf
+
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
